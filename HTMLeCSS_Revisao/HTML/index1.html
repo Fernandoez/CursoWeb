@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8"> <!-- Codificação de caracteres utilizados no desenvolvimento-->
 
-    <!-- meta exclusiva para o Internet Explorer, para configurar a página para ser renderizada como em outra versão do memso-->
+    <!-- meta exclusiva para o Internet Explorer, para configurar a página para ser renderizada como em outra versão do mesmo-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- meta introduzida para definir a renderização em dispositivos móveis-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu HTML</title> <!-- Título do seu site/guia de navegação -->
 
+    <!-- Tag que engloba o CSS dentro do HTML, apenas para informação-->
     <style>
         /** Selecionando por CLASS **/
         .heads{
@@ -30,11 +31,13 @@
 
 </head>
 <body>
+    <!-- IDs são sempre únicos, não posso ter mais que um igual-->
+    <!-- Classes podem se repetir e posso ter elementos com mais de uma classe-->
     <h1 id="heading-one" class="heads">Corpo um</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse, provident necessitatibus ratione impedit vitae, delectus recusandae cupiditate nemo magni doloribus architecto dolores illo veritatis atque et excepturi quos? Praesentium.</p>
     <h1 id="heading-two", class="heads">Corpo dois</h1>
 
-    <!-- Headings h1 a h6-->
+    <!-- Headings h1 a h6, são importantes para buscas, por exemplo-->
     <!-- Considerar a hierarquia dos hs para a semântica como abaixo-->
     <h1>Titulo</h1>
     <h2>Subtitulo</h2>

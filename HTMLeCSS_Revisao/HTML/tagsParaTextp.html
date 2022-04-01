@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags para texto</title>
+</head>
+<body>
+    <!-- Diferença entre as tags e semântica
+        Tag "b" e tag "strong" deixam em negrito, mas a tag strong muda o sentido lógico da palavra, para que ela tenha uma leitura mais forte e não somente sua cor.
+        Da mesma forma as tags "i" e "em", a tag em muda a lógica, indica enfase na palavra
+    A semantic aé muito importante para leitores automáticos de texto e buscadores-->
+    <p><b>Lorem</b> <strong>dolor</strong>  sit <i>amet</i> <em>consectetur</em> adipisicing elit. Saepe nam incidunt ut. 
+        Vero, numquam cum ratione eum aperiam quis, ullam sint? 
+        Rem et <del>earum</del> <ins>nulla</ins> recusandae <s>unde</s> <u>autem</u> corrupti.
+        <!-- Del para uma errata, por exemplo, e coloco ins para informar a substituição
+            as tags s e u são as físicas, somente para riscar e sublinhar-->
+        
+        <br> <!-- Tag para quebra de linha-->
+        <!-- Tag q serve para sitações dentro de paragrafos, inline. cite é para dizer de onde veio-->
+        <q cite="referenciaAqui">Representação para elevado, subir algo em geral</q> seria 2<sup>2</sup> <br>
+        e tenho também representação para <q>abaixo</q> H<sub>2</sub>O
+        <hr> <!-- Tag utilizada para separação de conteudos através deuma linha-->
+        <!-- Tag utilizada para link. O target informa onde será aberta-->
+    <a href="aquiVaioLink" target="_blank">LINQUE AQUI</a>
+
+    <!-- Tag utilizada para inserir imagens. O alt é para que você descreva sua imagem, por exemplo, para leitores altomáticos e buscadores-->
+    <img src="aquiVaioCaminhodaImg" alt="descricao">
+    </p>
+
+    <!-- tag blockquote para bloco de sitações, fora de paragrafo, não inline-->
+    <blockquote cite="referenciaAqui">Bloco especifico de citacao para a pagina</blockquote>
+
+    <!-- Tag pre usada para texto preformatado, pega exatamente como você coloca no editor de código
+    usado por exemplo para citações de códigos na página-->
+    <pre>exemplo de 
+        texto pre 
+        for 
+    matado
+    </pre>
+
+    
+
+
+</body>
+</html>
