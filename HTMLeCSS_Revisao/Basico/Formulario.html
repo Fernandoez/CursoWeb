@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        label{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- atributo action serve para dizer par aonde será enviado o formulário
+    o atibuto method
+    o atributo target para vermos que o formulário foi enviado
+    o atributo autocomplete para ele não ficar completando as informações com informações já digitadas-->
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>O meu formulário</p>
+        <p> <!-- tag usada para definir o nome do input, atributo for indica para qual input é este label informando o id-->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required> <!-- tag usada para inserção de dados com interação do usuário
+                                            atributo nome é o que chega para o backend junto com o value do campo
+                                            atributo required indica que o input tem que ser preenchido obrigatoriamente-->
+        </p>
+
+        <p> 
+            <label for="dev">Sou um dev:</label>
+            <input type="checkbox" id="dev" value="sim"> <!-- tag usada para seleção de opções-->
+            <label for="dev1">Sou um dev:</label>
+            <input type="checkbox" id="dev1" value="sim">
+        </p>
+
+        <p> 
+            Gênero:<br>
+            <label for="feminino">Feminino:</label>                             <!-- Atributo checked indica qual vem marcado-->
+            <input type="radio" id="feminino" name="genero" value="feminino" checked> <!-- tag usada para seleção de apenas uma opção, todas elas terão o mesmo nome nesse caso e somenteuma será selecionada-->
+            <label for="masculino">Masculino:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+        </p>
+
+        <p> 
+            <label for="date">Data:</label> <!-- input para inserção de data-->
+            <input type="date" id="date" name="date" value="2020-01-01"> 
+        </p>
+
+        <p> 
+            <label for="datetime">Data:</label> <!-- input para inserção de data e hora-->
+            <input type="datetime-local" id="datetime" name="datetime" value="2020-01-01T09:00"> 
+        </p>
+
+        <p> 
+            <label for="time">Time:</label> <!-- input para inserção de hora-->
+            <input type="time" id="time" name="time" value="09:00"> 
+        </p>
+
+        <p> 
+            <label for="cor">Cor preferida:</label> <!-- input para inserção de cor-->
+            <input type="color" id="cor" name="cor" value="#FF0000"> 
+        </p>
+
+        <p> 
+            <label for="email">Seu email:</label> <!-- input para inserção de email-->
+            <input type="email" id="email" name="email" placeholder="email@email.com"> 
+        </p>
+
+        <p> 
+            <label for="file">Sua foto:</label> <!-- input para inserção de arquivos-->
+            <input type="file" id="file" name="file" accept=".png, .svg, image/*" multiple> <!-- Atributo accept para informar o tipo de arquivo que você aceita
+                                                                                    para todos os tipos daquele arquivo uso, por exemplo, image/* aceita todos os tipos de imagem
+                                                                                    atributo multiple para deixar selecionar mais do que um aquivo-->
+        </p>
+
+        <p> 
+            <label for="number">Number:</label> <!-- input para inserção de números-->
+            <input type="number" id="number" name="number" min="10" max="50" step="3"> <!-- atributo step define de quanto em quanto ele pula-->
+        </p>
+
+        <p> 
+            <label for="password">Digite sua senha:</label> <!-- input para inserção de senha-->
+            <input type="password" id="password" name="password" placeholder="Digite sua senha"> 
+        </p>
+
+        <p> 
+            <label for="range">Range:</label> <!-- input para inserção de valor por range-->
+            <input type="range" id="range" name="range" min="0" max="10" step="2"> <!-- atributo step define de quanto em quanto ele pula-->
+        </p>
+
+        <p> 
+            <label for="url">URL:</label> <!-- input para inserção de url-->
+            <input type="url" id="url" name="url" placeholder="URL"> 
+        </p>
+        
+        <p> 
+            <label for="search">SEARCH:</label> <!-- input para busca, imporatante para semantica-->
+            <input type="search" id="search" name="search" placeholder="Sua Busca"> 
+        </p>
+
+        <p>
+            <label for="select">Selecione uma opção</label>
+            <select id="select" name="select"> <!-- para seleção de alguma opção-->
+            <optgroup label="Grupo1">
+                <option value="1">Valor1</option>
+                <option value="qualquer">Valor2</option>
+                <option value="3" label="Valor3"></option>
+            </optgroup>
+            </select>
+        </p>
+
+        <p> 
+            <label for="textarea">textarea:</label> <!-- input para inserção de url-->
+            <textarea type="textarea" id="textarea" name="textarea" rows="3" cols="5"></textarea> 
+        </p>
+
+        <p> 
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+
+</body>
+</html>

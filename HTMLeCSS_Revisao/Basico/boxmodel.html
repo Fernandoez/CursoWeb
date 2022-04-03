@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+
+    <style>
+
+        *{  /**simples reset de propriedades de box para que só sejam validas as configuraçõs definidas
+                nos meus elementos**/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /** Definindo para componentes especificos**/
+        .section-one, .section-two{
+            box-sizing: border-box; /** faz com que o calculo do tamanho da box envolva todos os elementos
+                                    conteudo, padding e margin. Sempre ajustando to tamanho fixo que eu definir**/
+        }
+        .section-one{
+            width: 200px;
+            background: deeppink;
+
+            border: 5px solid black;
+            /** ao mexer na border tenho a opção de mexer separadamente
+            em todas elas usando comandos especificos como por exemplo para a borda de baixo
+            border-bottom-color, border-bottom-style, border-bottom-width**/
+
+            padding: 15px;
+            margin: 30px;
+        } /** a margin usada para espaçamento vai ser a maior entre os elementos**/
+        .section-two{
+            width: 200px;
+            background: cyan;
+            border: 5px solid black;
+            padding: 15px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro vero ipsum esse, facere pariatur id. Explicabo exercitationem nostrum repudiandae dolor? Odio odit repellendus doloribus, incidunt quas possimus ut animi saepe.</section>
+    <section class="section-two">two</section>
+</body>
+</html>

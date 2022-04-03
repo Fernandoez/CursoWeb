@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;  /** Remove o espaçamento entre os campos da tabela**/
+            width: 100%;
+        }
+
+        table th, table td{
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption{
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 15px;
+            margin: 5px 0;
+        }
+
+        table tfoot, table th{
+            background: #ddd;
+        }
+
+        tfoot td{
+            font-style: italic;
+        }
+
+        .resposive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit</p>
+
+    <!-- DICA DE RESPONSIVIDADE PARA TABELA: COLOQUE NUMA DIV, IDENTIFIQUE E USE O CSS-->
+<div class="resposive-table">
+    <table>
+        <caption>Descrição da tabela</caption> <!-- Usado para descrição da table e pode ser customizado como no css acima-->
+        <thead> <!-- Header da tabela-->
+            <tr> <!-- Referencia a linha da tabela-->
+                <th>Título 1</th>
+                <th>Título 2</th> <!-- Elementos titulos de cada coluna da tabela-->
+                <th>Título 3</th>
+            </tr>
+            
+        </thead>
+        <tbody> <!-- Corpo da tabela-->
+            <tr> <!-- Referencia a linha da tabela-->
+                <td>Copro 1</td> <!-- Elementos do corpo de cada coluna da tabela-->
+                <td>Copro 2</td>
+                <td>Copro 3</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">AQUI</td> <!-- No colspan eu informo a quantidade de celulas que aquele elemento irá ocupar nas linha
+                                                            no rowspan eu informo a quantidade de celular que aquele elemento irá ocupar nas coluna-->
+                
+                <td>Copro 3</td>
+            </tr>
+            <tr>
+                <td>Copro 3</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Geralmente bem igual o restante, sem diferenciação mas pode ser customizado
+                    caso seja necessário ter um footer para a tabela-->
+            <tr>
+                <td>Copro 1</td>
+                <td>Copro 2</td> 
+                <td>Copro 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
