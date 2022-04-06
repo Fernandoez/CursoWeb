@@ -1,0 +1,40 @@
+/*seletores*/
+
+.pai > p.irmao{         /*filho direto*/
+    color: green;
+}
+.pai h1+p {            /*proximo p depois do h1*/
+    color: red;
+}
+
+.pai p+h1 {            /*proximo h1 depois do p*/
+    color: yellow;
+}
+
+.pai .filho .proximo+ p{
+    color: cyan;
+}
+
+.pai h2~p {            /*todo p depois de h2*/
+    color: blue;
+}
+
+/* SELETORES DE ATRIBUTOS*/
+/* Funciona para os padrões do CSS também*/
+[meu-atributo="valor"]{   
+    color:pink 
+}
+
+[meu-atributo~="valor"]{} /* Ter pelo menos esse valor. Valores devem estar seprados no elemento*/
+
+[meu-atributo^="valor"]{} /*Se meu valor começa com isso, vale a paertir da primeira letra, ou seja
+                        se fosse ^="v" ou "val", já pegaria porque valor começa com v*/
+
+[meu-atributo$="valor"]{} /* Termina com, mesma ideia do incia com, posso ir tirando as letras até a ultima*/
+
+[meu-atributo*="valor"]{} /* Contem*/
+
+[checked]{
+    width: 30px;
+    height: 30px;
+}
