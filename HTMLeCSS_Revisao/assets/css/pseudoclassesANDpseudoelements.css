@@ -1,0 +1,83 @@
+.heading:hover{
+    background: red;
+}
+
+a:link{
+    color:deeppink;
+}
+
+a:visited{
+    color:firebrick;
+}
+
+a:hover{
+    background: darkslateblue;
+    color:white;
+    text-decoration: none;
+}
+
+a:active{
+    background: darkslategray;
+}
+
+
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+input:checked + p{
+    background-color: red;
+}
+
+input:not(checked) + p{ /*quando o input não estiver checked, o p depois dele fica como fundo amarelo  */
+    background-color: yellow;
+}
+
+p:not(.meio){   /*todos os p menos o que tem a classe meio */
+    color: blue;
+}
+
+/*pseudo class que seleciona por indices --FUNCIONA SOMENTE COM TAGS IRMÃS--*/
+ul.pseudoclass li:nth-child(odd){       /*Nesse caso selecionando os indices ímpares*/
+    background-color: rebeccapurple;
+}
+
+ul.pseudoclass li:nth-child(even){      /*Nesse caso selecionando os indices pares*/
+    background-color: darkcyan;
+}
+
+ul.pseudoclass li:nth-child(3n){      /*Nesse caso selecionando de 3 em 3*/
+    background-color: darkgoldenrod;
+}
+
+ul.pseudoclass li:nth-child(3n+5){      /*começando do 5 começa a aplicar de 3 em 3*/
+    background-color: darkgrey;
+}
+
+/*pseudo elementos-> elementos que você inclui aqui e que não estão na pg. Podem ser adicionados propriedades próprias*/
+ul.pseudoelement li::after{
+    content: ' -';
+    background-color: black;
+    color: white;
+    display: block;
+}
+
+ul.pseudoelement li::before{
+    content: ' -';
+    background-color: red;
+    color: white;
+    display: block;
+}
+
+p::first-letter{
+    font-size: 50px;
+}
+
+p::selection{ /*quando o texto é selecionado ele realiza essa ação*/
+    background-color: black;
+    color: white;
+}
+
+::placeholder{
+    color: red;
+}
